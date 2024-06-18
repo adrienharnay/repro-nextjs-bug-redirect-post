@@ -10,10 +10,13 @@ const Home = () => {
       <button
         onClick={async () => {
           try {
-            const res = await fetch("http://localhost:3000/api/hello", {
-              method: "POST",
-              mode: "no-cors",
-            });
+            const res = await fetch(
+              "https://repro-nextjs-bug-redirect-post-2.vercel.app/api/hello",
+              {
+                method: "POST",
+                mode: "no-cors",
+              }
+            );
             const newData = await res.json();
             setData(newData);
           } catch (error) {
