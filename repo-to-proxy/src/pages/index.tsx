@@ -9,9 +9,12 @@ const Home = () => {
 
       <button
         onClick={async () => {
-          const res = await fetch("http://localhost:3000/api/hello", {
-            method: "POST",
-          });
+          const res = await fetch(
+            "https://repro-nextjs-bug-redirect-post.vercel.app/api/hello",
+            {
+              method: "POST",
+            }
+          );
           const newData = await res.json();
           setData(newData);
         }}

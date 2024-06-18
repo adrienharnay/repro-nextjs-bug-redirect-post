@@ -1,5 +1,4 @@
-const REDIRECT_URL =
-  "https://repro-nextjs-bug-redirect-post-m6bd8u9cl.vercel.app";
+const REDIRECT_URL = "https://repro-nextjs-bug-redirect-post.vercel.app/";
 
 /**
  * @type {import('next').NextConfig}
