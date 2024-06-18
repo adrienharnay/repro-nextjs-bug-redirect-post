@@ -14,7 +14,6 @@ const Home = () => {
               "https://repro-nextjs-bug-redirect-post-2.vercel.app/api/hello",
               {
                 method: "POST",
-                mode: "no-cors",
               }
             );
             const newData = await res.json();
