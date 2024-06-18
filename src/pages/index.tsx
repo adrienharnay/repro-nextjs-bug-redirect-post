@@ -1,7 +1,7 @@
 const Test = () => {
   return (
     <div>
-      <a href="/test">Go to test page</a>
+      <a href="/test-proxied">Go to test page</a>
     </div>
   );
 };
