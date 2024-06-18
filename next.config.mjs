@@ -1,4 +1,5 @@
-const REDIRECT_URL = "http://localhost:3000";
+const REDIRECT_URL =
+  "https://repro-nextjs-bug-redirect-post-m6bd8u9cl.vercel.app";
 
 /**
  * @type {import('next').NextConfig}

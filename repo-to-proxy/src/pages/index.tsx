@@ -5,9 +5,13 @@ const Home = () => {
 
   return (
     <div>
+      <a href="/test">Go to test page</a>
+
       <button
         onClick={async () => {
-          const res = await fetch("/api/hello", { method: "POST" });
+          const res = await fetch("http://localhost:3000/api/hello", {
+            method: "POST",
+          });
           const newData = await res.json();
           setData(newData);
         }}
