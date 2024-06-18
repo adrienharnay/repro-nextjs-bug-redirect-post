@@ -9,14 +9,18 @@ const Home = () => {
 
       <button
         onClick={async () => {
-          const res = await fetch(
-            "https://repro-nextjs-bug-redirect-post.vercel.app/api/hello",
-            {
-              method: "POST",
-            }
-          );
-          const newData = await res.json();
-          setData(newData);
+          try {
+            const res = await fetch(
+              "https://repro-nextjs-bug-redirect-post.vercel.app/api/hello",
+              {
+                method: "POST",
+              }
+            );
+            const newData = await res.json();
+            setData(newData);
+          } catch (error) {
+            console.error(error);
+          }
         }}
       >
         Trigger POST
