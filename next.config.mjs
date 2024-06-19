@@ -1,5 +1,5 @@
 const REDIRECT_URL =
-  "https://repro-nextjs-bug-redirect-post-proxied.vercel.app/";
+  "https://repro-nextjs-bug-redirect-post-proxied.vercel.app";
 
 /**
  * @type {import('next').NextConfig}
